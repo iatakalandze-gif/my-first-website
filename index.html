@@ -1,89 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ia Takalandze | Front-End Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+  <!-- HEADER -->
+  <header>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
   <main class="container">
-    <section class="hero">
-      <section class="about">
-  <h2>About Me</h2>
-  <p>
-    I help small businesses and freelancers build modern, fast and
-    responsive websites that convert visitors into real clients.
-  </p>
-  <p>
-    My focus is not just clean code, but clear structure, strong
-    visuals and user-friendly layouts that make your business look
-    professional and trustworthy.
-  </p>
-  <p>
-    Whether you need a landing page, portfolio or business website,
-    I build solutions that support your goals and help grow your
-    online presence.
-  </p>
+
+   <!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Modern Websites That Convert</h1>
+    <p>
+      I help small businesses build clean, fast and responsive websites
+      that turn visitors into real clients.
+    </p>
+    <a href="#contact" class="btn-primary">Hire Me</a>
+  </div>
 </section>
-      <h1>Ia Takalandze</h1>
-      <h2>Front-End Web Developer</h2>
-      <p>
-        I build clean, modern and responsive websites for small businesses and freelancers.
-      </p>
 
-      <ul class="services">
-        <li>Responsive Website Design</li>
-        <li>Landing Pages</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Mobile-Friendly Layouts</li>
-        <li>GitHub Pages Deployment</li>
-      </ul>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I help small businesses and freelancers build
+        <span class="highlight">high-converting</span>,
+        modern websites that look professional and build trust.
+      </p>
+      <p>
+        My focus is not just clean code, but clear structure, strong visuals
+        and user-friendly layouts that support real business goals.
+      </p>
     </section>
-<section class="projects">
-  <h2>Projects</h2>
 
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Business Landing Page</h3>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Business Landing Page</h3>
+          <p>
+            High-converting landing page designed to help small businesses
+            turn visitors into paying clients.
+          </p>
+          <span>HTML • CSS • Responsive</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            Clean and modern personal website focused on credibility,
+            branding and client trust.
+          </p>
+          <span>HTML • CSS • GitHub Pages</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Contact Form Integration</h3>
+          <p>
+            Functional contact form connected to email to capture real
+            leads without backend complexity.
+          </p>
+          <span>Formspree • UX</span>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+<section id="services" class="services">
+  <h2>Services</h2>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Landing Page</h3>
       <p>
-        High-converting landing page designed to help small businesses
-        turn visitors into paying clients.
+        High-converting landing page designed to turn visitors into
+        real leads and clients.
       </p>
-      <span>HTML • CSS • Responsive</span>
     </div>
 
-    <div class="project-card">
+    <div class="service-card">
       <h3>Portfolio Website</h3>
       <p>
-        Clean and modern personal website focused on credibility,
-        branding and client trust.
+        Clean and modern personal website that builds credibility
+        and trust.
       </p>
-      <span>HTML • CSS • GitHub Pages</span>
     </div>
 
-    <div class="project-card">
-      <h3>Contact Form Integration</h3>
+    <div class="service-card">
+      <h3>Business Website</h3>
       <p>
-        Functional contact form connected to email to capture real
-        leads without backend complexity.
+        Professional multi-section website tailored to your business
+        goals.
       </p>
-      <span>Formspree • UX</span>
     </div>
   </div>
 </section>
-    <section class="contact">
-      <h3>Contact Me</h3>
+
+<!-- PRICING -->
+<section class="pricing">
+  <h2>Pricing</h2>
+
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3>Basic</h3>
+      <p class="price">$99</p>
+      <ul>
+        <li>1-page landing website</li>
+        <li>Responsive design</li>
+        <li>Contact form</li>
+        <li>Delivery in 3 days</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card featured">
+      <h3>Standard</h3>
+      <p class="price">$199</p>
+      <ul>
+        <li>Multi-section website</li>
+        <li>Custom design</li>
+        <li>Contact form</li>
+        <li>Deployment included</li>
+        <li>Delivery in 5 days</li>
+      </ul>
+    </div>
+
+    <div class="pricing-card">
+      <h3>Premium</h3>
+      <p class="price">$299</p>
+      <ul>
+        <li>Full business website</li>
+        <li>Advanced styling</li>
+        <li>Form + integrations</li>
+        <li>Priority support</li>
+        <li>Delivery in 7 days</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>What Clients Say</h2>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p>
+        “Very professional work. The website looks clean, modern and
+        loads fast. Communication was clear and delivery was on time.”
+      </p>
+      <span>— Demo Client, Small Business Owner</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        “Great attention to detail and business-focused design.
+        Exactly what I needed for my online presence.”
+      </p>
+      <span>— Demo Client, Freelancer</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        “Fast delivery, clean code and excellent design.
+        Highly recommended.”
+      </p>
+      <span>— Demo Client, Startup Founder</span>
+    </div>
+  </div>
+</section>
+<!-- WHY CHOOSE ME -->
+<section class="why-me">
+  <h2>Why Choose Me</h2>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <h3>Business-Oriented Design</h3>
+      <p>
+        I focus on layouts and content that help convert visitors
+        into real clients.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <h3>Clear Communication</h3>
+      <p>
+        You always know what stage your project is at.
+        No confusion, no surprises.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <h3>Fast & Reliable Delivery</h3>
+      <p>
+        I respect deadlines and deliver high-quality work on time.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <h3>Clean & Maintainable Code</h3>
+      <p>
+        Your website is easy to update, fast to load and built
+        with best practices.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+<section class="cta">
+  <h2>Let’s Build a Website That Brings You Clients</h2>
+  <p>
+    Ready to upgrade your online presence?
+    Let’s discuss your project and turn your idea into a modern website.
+  </p>
+  <a href="#contact" class="btn">Start Your Project</a>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
 
       <form action="https://formspree.io/f/mwvvkzzw" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
+
   </main>
+<!-- FAQ -->
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h3>How long does it take to build a website?</h3>
+    <p>
+      Most projects take between 3 to 7 days, depending on complexity
+      and content readiness.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What do you need from me to start?</h3>
+    <p>
+      I usually need your content, branding (if any), and a short
+      description of your goals. I’ll guide you through everything.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Is the website mobile-friendly?</h3>
+    <p>
+      Yes. All websites are fully responsive and optimized for
+      mobile, tablet, and desktop devices.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Do you offer revisions?</h3>
+    <p>
+      Yes. Revisions are included to ensure you’re happy with the
+      final result.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Will my website be deployed and live?</h3>
+    <p>
+      Absolutely. I handle deployment and make sure your website
+      is live and accessible.
+    </p>
+  </div>
+</section>
+  <!-- SCROLL ANIMATION -->
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    });
+
+    sections.forEach((section) => {
+      section.classList.add("hidden");
+      observer.observe(section);
+    });
+  </script>
 
 </body>
 </html>
