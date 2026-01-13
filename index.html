@@ -1,27 +1,41 @@
-<div class="container">
-  <div>
-    <h1>Ia Takalandze</h1>
-    <h2>Front-End Web Developer</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ia Takalandze | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <p>
-      I build clean, modern and responsive websites for small businesses and freelancers.
-    </p>
+  <main class="container">
+    <section class="hero">
+      <h1>Ia Takalandze</h1>
+      <h2>Front-End Web Developer</h2>
+      <p>
+        I build clean, modern and responsive websites for small businesses and freelancers.
+      </p>
 
-    <ul>
-      <li>Responsive Website Design</li>
-      <li>Landing Pages</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Mobile-Friendly Layouts</li>
-      <li>GitHub Pages Deployment</li>
-    </ul>
-  </div>
+      <ul class="services">
+        <li>Responsive Website Design</li>
+        <li>Landing Pages</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Mobile-Friendly Layouts</li>
+        <li>GitHub Pages Deployment</li>
+      </ul>
+    </section>
 
-  <div>
-  <form action="https://formspree.io/f/mwvvkzzw" method="POST">
-      <input type="text" placeholder="Your Name" />
-      <input type="email" placeholder="Your Email" />
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</div>
+    <section class="contact">
+      <h3>Contact Me</h3>
+
+      <form action="https://formspree.io/f/mwvvkzzw" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
