@@ -7,7 +7,8 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  background: red !important;
+}
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,3 +112,4 @@ button:hover {
     padding: 25px;
   }
 }
+
