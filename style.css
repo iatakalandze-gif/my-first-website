@@ -2,85 +2,114 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #5f5cff, #6c63ff);
-  color: #fff;
-  min-height: 100vh;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero h2 {
-  font-size: 22px;
-  font-weight: normal;
-  opacity: 0.9;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 16px;
+  background: #0f172a; /* dark navy */
+  color: #e5e7eb;
   line-height: 1.6;
-  margin-bottom: 30px;
 }
 
-.services {
+.hero {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #94a3b8;
+}
+
+p {
+  margin: 20px 0;
+  color: #cbd5f5;
+}
+
+ul {
+  margin-top: 20px;
   list-style: none;
-  margin-bottom: 50px;
 }
 
-.services li {
-  margin-bottom: 8px;
+ul li {
+  margin-bottom: 10px;
   padding-left: 16px;
   position: relative;
 }
 
-.services li::before {
-  content: "•";
+ul li::before {
+  content: "▹";
   position: absolute;
   left: 0;
+  color: #6366f1;
 }
 
+/* Contact Card */
 .contact {
-  background: rgba(255, 255, 255, 0.12);
+  margin-top: 60px;
+  background: #111827;
   padding: 30px;
   border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 .contact h3 {
   margin-bottom: 20px;
+  color: #f9fafb;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input,
-textarea {
-  padding: 12px;
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
   border-radius: 8px;
   border: none;
-  font-size: 14px;
+  background: #1e293b;
+  color: #e5e7eb;
 }
 
-textarea {
-  resize: vertical;
-  min-height: 120px;
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
 }
 
 button {
+  width: 100%;
   padding: 14px;
-  background
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #4f46e5;
+  cursor: pointer;
+}
+
+/* Animation */
+.hero {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
