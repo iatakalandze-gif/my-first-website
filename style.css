@@ -1,133 +1,96 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 body {
-  background: #0f172a; /* dark navy */
-  color: #e5e7eb;
-  line-height: 1.6;
+  background: #170c0c
+
+;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
-.hero {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 40px;
+/* HEADER */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(137, 59, 59, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 16px 24px;
+  display: flex;
+  gap: 24px;
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #f9fafb;
+.nav a {
+  color: #eaeaea;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
-h2 {
-  margin-top: 10px;
-  font-size: 1.4rem;
-  color: #94a3b8;
+.nav a:hover {
+  opacity: 1;
 }
 
-p {
-  margin: 20px 0;
-  color: #cbd5f5;
-}
-
-ul {
-  margin-top: 20px;
-  list-style: none;
-}
-
-ul li {
-  margin-bottom: 10px;
-  padding-left: 16px;
-  position: relative;
-}
-
-ul li::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: #6366f1;
-}
-
-/* Contact Card */
-.contact {
-  margin-top: 60px;
-  background: #111827;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-
-.contact h3 {
-  margin-bottom: 20px;
-  color: #f9fafb;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: none;
-  background: #1e293b;
-  color: #e5e7eb;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #94a3b8;
-}
-
-button {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  background: #6366f1;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-button:hover {
-  background: #4f46e5;
-  cursor: pointer;
-}
-
-/* Animation */
-.hero {
-  animation: fadeUp 1s ease;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* ===== Sections ===== */
-section {
-  max-width: 1000px;
-  margin: 80px auto;
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
-/* ===== About ===== */
+/* HERO */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  color: #cccccc;
+  max-width: 600px;
+}
+
+.btn {
+  width: fit-content;
+  padding: 12px 24px;
+  background: #7b82ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
+section {
+  margin: 80px 0;
+}
+
+/* ABOUT */
 .about p {
-  color: #e0e0e0;
+  color: #dddddd;
   line-height: 1.7;
   margin-bottom: 16px;
 }
 
-/* ===== Projects ===== */
+.highlight {
+  color: #7b82ff;
+}
+
+/* PROJECTS */
 .projects h2 {
   text-align: center;
   margin-bottom: 40px;
@@ -140,44 +103,274 @@ section {
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 14px;
   padding: 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.project-card h3 {
-  margin-bottom: 12px;
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
 
 .project-card p {
-  color: #dcdcdc;
-  font-size: 15px;
-  line-height: 1.6;
+  color: #cccccc;
+  margin: 12px 0;
 }
 
 .project-card span {
-  display: block;
-  margin-top: 16px;
   font-size: 13px;
-  color: #bdbdbd;
+  color: #aaaaaa;
 }
 
-/* Hover animation */
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+/* CONTACT */
+.contact form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-/* Project cards hover animation */
-.project-card {
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #7b82ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* SCROLL ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+/* SERVICES */
+.services h2,
+.pricing h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card p {
+  color: #cccccc;
+  margin-top: 12px;
+}
+
+/* PRICING */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 28px;
+  border-radius: 14px;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
-<div class="projects-grid">
-    <div class="project-card">
-      <h3>Business Landing Page</h3>
-      <p>
+
+.pricing-card ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.pricing-card li {
+  margin: 10px 0;
+  color: #cccccc;
+}
+
+.price {
+  font-size: 36px;
+  color: #7b82ff;
+  margin: 16px 0;
+}
+
+.featured {
+  border: 2px solid #7b82ff;
+}
+/* TESTIMONIALS */
+.testimonials h2,
+.why-me h2,
+.cta h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border-radius: 14px;
+}
+
+.testimonial-card p {
+  color: #cccccc;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.testimonial-card span {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+/* WHY CHOOSE ME */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+
+.why-card p {
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.15),
+    rgba(99, 102, 241, 0.05)
+  );
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+.cta p {
+  color: #dddddd;
+  max-width: 600px;
+  margin: 20px auto 30px;
+}
+/* FAQ */
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 24px;
+  border-radius: 14px;
+}
+
+.faq-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("hero-bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cfcfcf;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background: #7c5cff;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #6849ff;
+  transform: translateY(-2px);
+}
